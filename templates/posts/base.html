@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+
+{% block head_extra %} {% endblock head_extra %}
+<head>
+	<meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<title>{% block head_title %}Home - Blog{% endblock head_title %}</title>
+
+	<!-- Standard Favicon -->
+	<link rel="icon" type="image/x-icon" href="{% static 'assets/images/favicon.ico'%}" />
+
+	<!-- For iPhone 4 Retina display: -->
+	<link rel="apple-touch-icon-precomposed" href="{% static 'assets/images/apple-touch-icon-114x114-precomposed.png'%}">
+
+	<!-- For iPad: -->
+	<link rel="apple-touch-icon-precomposed" href="{% static 'assets/images/apple-touch-icon-72x72-precomposed.html'%}">
+
+	<!-- For iPhone: -->
+	<link rel="apple-touch-icon-precomposed" href="{% static 'assets/images/apple-touch-icon-57x57-precomposed.png'%}">
+
+	<!-- Library - Google Font Familys -->
+	<link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700%7cMontserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/revolution/css/settings.css'%}">
+	<!-- Library -->
+    <link href="{% static 'assets/css/lib.css' %}" rel="stylesheet">
+
+	<!-- Custom - Common CSS -->
+	<link rel="stylesheet" href="{% static 'assets/css/rtl.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css'%}">
+
+	<!--[if lt IE 9]>
+		<script src="{% static 'js/html5/respond.min.js'%}"></script>
+    <![endif]-->
+
+</head>
+
+
+
+{% block content %}{% endblock content %}
+
+
+
+
+
+<!-- Footer Main -->
+	<footer class="container-fluid no-left-padding no-right-padding footer-main">
+		<div class="container">
+			<div class="copyright">
+				<p>Copyright @ 2020 BLOG</p>
+			</div>
+		</div><!-- Container /- -->
+	</footer><!-- Footer Main /- -->
+
+
+<!-- JQuery v1.12.4 -->
+	<script src="{% static 'assets/js/jquery-1.12.4.min.js'%}"></script>
+
+	<!-- Library - Js -->
+	<script src="{% static 'assets/js/popper.min.js' %}"></script>
+	<script src="{% static 'assets/js/lib.js'%}"></script>
+
+	<!-- REVOLUTION JS FILES -->
+	<script type="text/javascript" src="{% static 'assets/revolution/js/jquery.themepunch.tools.min.js'%}"></script>
+	<script type="text/javascript" src="{% static 'assets/revolution/js/jquery.themepunch.revolution.min.js'%}"></script>
+
+	<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+	<script type="text/javascript" src="{% static 'assets/revolution/js/extensions/revolution.extension.actions.min.js'%}"></script>
+	<script type="text/javascript" src="{% static 'assets/revolution/js/extensions/revolution.extension.carousel.min.js'%}"></script>
+	<script type="text/javascript" src="{% static 'assets/revolution/js/extensions/revolution.extension.kenburn.min.js'%}"></script>
+	<script type="text/javascript" src="{% static 'assets/revolution/js/extensions/revolution.extension.layeranimation.min.js'%}"></script>
+	<script type="text/javascript" src="{% static 'assets/revolution/js/extensions/revolution.extension.migration.min.js'%}"></script>
+	<script type="text/javascript" src="{% static 'assets/revolution/js/extensions/revolution.extension.navigation.min.js'%}"></script>
+	<script type="text/javascript" src="{% static 'assets/revolution/js/extensions/revolution.extension.parallax.min.js'%}"></script>
+	<script type="text/javascript" src="{% static 'assets/revolution/js/extensions/revolution.extension.slideanims.min.js'%}"></script>
+	<script type="text/javascript" src="{% static 'assets/revolution/js/extensions/revolution.extension.video.min.js'%}"></script>
+
+	<!-- Library - Theme JS -->
+	<script src="{% static 'assets/js/functions.js'%}"></script>
